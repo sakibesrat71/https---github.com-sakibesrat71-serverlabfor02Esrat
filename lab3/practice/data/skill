@@ -1,0 +1,17 @@
+{
+  "1": {
+    "skill": "adobe",
+    "percentage": "30",
+    "text": "Grade: 5.00/5.00 | Science | Rajshahi Collegiate School, Rajshahi."
+  },
+  "2": {
+    "skill": "photoshop",
+    "percentage": "45",
+    "text": "Grade: 5.00/5.00 | Science | Rajshahi College, Rajshahi."
+  },
+  "3": {
+    "skill": "media",
+    "percentage": "60",
+    "text": "Grade: 3.XX/4.00 | Computer Science and Engineering | IUT."
+  }
+}
