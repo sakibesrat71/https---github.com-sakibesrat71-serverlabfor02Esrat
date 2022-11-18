@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const homeController = require("./controllers/homeController");
 const bookController = require("./controllers/bookController");
+const chatController = require("./controllers/chatController");
 const connectEnsureLogin = require('connect-ensure-login');
 const passport = require('passport');
 const checkAuthenticated = require('./routingmiddleare').checkAuthenticated;
@@ -25,5 +26,12 @@ router.post(
       failureRedirect: '/login',
       successRedirect: '/dashboard',
     }),homeController.postLogin);
+router.get("/chats",chatController.getChat);
+router.get("/squeakersaddview",chatController.addSqeakerView);
+router.post("/squeakersadd",chatController.addSqeaker);
+router.post("/sendChat",chatController.sendChat);
+router.get("/inbox",chatController.getInboxof);
+router.post("/inbox",chatController.getInboxofPOST);
+
 
 module.exports = router;
